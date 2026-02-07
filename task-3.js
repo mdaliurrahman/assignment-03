@@ -8,8 +8,8 @@ function finalScore (omr) {
             }
             if(total === 100){
                 const score = omr.right - omr.wrong * 0.5;
-                const final = Math.round(score);
-                return final;
+                const result = Math.round(score);
+                return result;
                 }
                 else{
                 return 'Invalid';
@@ -24,5 +24,5 @@ function finalScore (omr) {
          
 
 
-const final = finalScore(["Raj"]);
-console.log (final);
+const result = finalScore({ right: 50, wrong: 10, skip: 40 });
+console.log (result);
